@@ -59,35 +59,32 @@
 		<br>
 		</br>
 		<hr>
-		<div id="contact_form" class="row">
-  <div class="col-12 col-sm-12 col-lg-12">
-    <h2>Contact  Us</h2>
-    <p>Interested in Tuxedo Birds working for you?  Please fill in the below form with any questions or comments and we will get back to you.</p>
-    <form role="form" id="feedbackForm">
-      <div class="form-group">
-        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-        <span class="help-block" style="display: none;">Please enter your name.</span>
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
-        <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
-      </div>
-      <div class="form-group">
-        <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message"></textarea>
-        <span class="help-block" style="display: none;">Please enter a message.</span>
-      </div>
-      <img id="captcha" src="library/vender/securimage/securimage_show.php" alt="CAPTCHA Image" />
-      <a href="#" onclick="document.getElementById('captcha').src = 'library/vender/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Show a Different Image</a><br/>
-      <div class="form-group" style="margin-top: 10px;">
-        <input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="For security, please enter the code displayed in the box." />
-        <span class="help-block" style="display: none;">Please enter the code displayed within the image.</span>
-      </div>
-       
-      <span class="help-block" style="display: none;">Please enter a the security code.</span>
-      <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style="display: block; margin-top: 10px;">Send Feedback</button>
+		   <h2>Contact Us!</h2>
+  <p class="alert alert-info">Interested in Zerglings? Have too much time on your hands? Drop us a line and tell us all about it.</p>
+
+    <hr />
+
+    <form method="POST" action="http://forms.brace.io/tuxedocmd@gmail.com">
+    
+        <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input name="name" type="name" class="form-control" id="exampleInputName" placeholder="Enter name">
+        </div>
+    
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input name="_replyto" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+    
+        <div class="form-group">
+            <label for="exampleTextArea">Comments and other nice things</label>
+            <textarea name="message" class="form-control" rows="3"></textarea>    
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+
     </form>
-  </div><!--/span-->
-</div><!--/row-->
+</form> 
 <br>
         <hr>
         <div class="row">
@@ -98,13 +95,8 @@
             </div>
         </div>
     </div>
-
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/Br0kensword/Br0kensword.github.io/master/form.js"></script>
 </body>
-
-
-
 </html>              
                   		
