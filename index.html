@@ -2,352 +2,104 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Justin Unverricht">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <title>TuxedoBirds Productions</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Pretty Photo CSS -->
-    <link href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" rel="stylesheet" />
-    
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
+
 <body>
+    <div class='page'>
+    	<div class='penguin'> <h1>TuxedoBirds Productions</h1></div>
+    	<div class='footer'>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg btn-circle pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top">TuxedoBirds</a>
-            </li>
-            <li>
-                <a href="#top">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#services">Samples</a>
-            </li>
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    		<div class='info'>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>&nbsp;</h1>
-            <h1>&nbsp;</h1>
-            <h1>&nbsp;</h1>
-            <h1>&nbsp;</h1>
-            <h1>&nbsp;</h1>
-            <h1 class="title">TuxedoBirds Productions</h1>
-            <h2 class="title">Purveyor of fine code &amp; complex numbers</h2>
-            <br>
-            <a href="#about" class="btn btn-dark btn-xl">Explore</a>
-        </div>
-    </header>
+    			<div class='tooltip' id='about'>
+    				<a href="#aboutDiv" onclick='divToggle("about")'><i class="fas fa-user fa-2x"></i></a>
+    				<span class="tooltiptext">About Me</span>
+    			</div>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <img src="https://cloud.githubusercontent.com/assets/3700789/9857835/dbdad04c-5ad1-11e5-92bc-218126a77830.JPG" alt="Me!" class="img-circle">
-                </div>
-                <div class="col-lg-12 text-center">
-                    <h2>Hi I'm Justin, full-stack developer extraordinaire, admirer of odd creatures.</h2>
-                    <h2>While I can work in just about any language, I really love working in Python and JavaScript</h2>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+    			<div class='tooltip' id='projects'>
+    				<a href='#projectDiv' onclick='divToggle("project")'><i class="fas fa-image fa-2x"></i></a>
+    				<span class="tooltiptext">Projects</span>
+    			</div>
 
-    <!-- Services -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Cool projects and other nice things</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-beer fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Next Beer</strong>
-                                </h4>
-                                <p>A beer recommendation and visualization service. Adding new members everyday! </p>
-                                <a href="https://nextbeerback.herokuapp.com/" class="btn btn-light">Beer Here!</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Virtual Reality</strong>
-                                </h4>
-                                <p>Check out an awesome demo for constraint based procedurally generated virtual reality levels</p>
-                                <a href="https://github.com/psiofxt/VRProj/tree/master" class="btn btn-light">See it!</a>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-database fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Distributed Systems</strong>
-                                </h4>
-                                <p>A collaborative AP fault tolerant key value store using node.js and docker containers</p>
-                                <a href="https://bitbucket.org/cmps128gentelmanbastards/hw3/src" class="btn btn-light">Eventually consistent</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-magic fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>NLP</strong>
-                                </h4>
-                                <p>The winning system of UC Santa Cruz's 2016 Natural Language Processing competition</p>
-                                <a href="https://github.com/Br0kensword/NLP" class="btn btn-light">Converge here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+    			<div class='tooltip'>
+    				<a href='JustinU-2018.pdf' download><i class="fas fa-file-pdf fa-2x"></i></a>
+    				<span class="tooltiptext">Resume</span>
+    			</div>
 
-    <!-- Callout 
-    <aside class="callout">
-       
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
+    			<div class='tooltip'>
+    				<a href='https://www.linkedin.com/in/justinunverricht/'><i class="fab fa-linkedin fa-2x"></i></a>
+    				<span class="tooltiptext">LinkedIn</span>
+    			</div>
 
-    </aside>
-    -->
+    			<div class='tooltip'>
+    				<a href='https://github.com/Br0kensword'><i class="fab fa-github-square fa-2x"></i></a>
+    				<span class="tooltiptext">GitHub</span>
+    			</div>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Pics</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://cloud.githubusercontent.com/assets/3700789/5333157/bfebc296-7e23-11e4-9f6d-68505f6236eb.png" rel="prettyPhoto" title=" Custom 3D environments">
-                                    <img class="img-portfolio img-responsive" src="https://cloud.githubusercontent.com/assets/3700789/5333157/bfebc296-7e23-11e4-9f6d-68505f6236eb.png" alt="level">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://cloud.githubusercontent.com/assets/3700789/21127483/0b56bd76-c0a8-11e6-87b7-4f1bfa31fc15.png" rel="prettyPhoto" title="Next Beer Landing Page">
-                                    <img class="img-portfolio img-responsive" src="https://cloud.githubusercontent.com/assets/3700789/21127483/0b56bd76-c0a8-11e6-87b7-4f1bfa31fc15.png" alt="Next Beer">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://cloud.githubusercontent.com/assets/3700789/21127534/7a351dc8-c0a8-11e6-9fe3-f9d5064d99e2.png" rel="prettyPhoto" title="PCG VR Levels">
-                                    <img class="img-portfolio img-responsive" src="https://cloud.githubusercontent.com/assets/3700789/21127534/7a351dc8-c0a8-11e6-9fe3-f9d5064d99e2.png" alt="How it works">
-                                    
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://cloud.githubusercontent.com/assets/3700789/5333153/bfe793d8-7e23-11e4-86eb-ea018ef3c8bb.png" rel="prettyPhoto" title="3D models with collision and relflection effects">
-                                    <img class="img-portfolio img-responsive" src="https://cloud.githubusercontent.com/assets/3700789/5333153/bfe793d8-7e23-11e4-86eb-ea018ef3c8bb.png" alt="Model">
-                                </a> 
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) 
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                    -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+    		</div> <!-- end of info -->
 
+    	</div> <!-- end of footer -->
 
-
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-12 text-center">
-                    <h2>But wait there's more!</h2>
-                    <!--
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                -->
-                </div>
-
-            </div>
-        </div>
-    </aside>
-
-   <h1>&nbsp;</h1>
-
-    <section id="contact">
-    <div class="col-md-8 col-md-offset-2">
-    <h2 class="text-center">Contact Me!</h2>
-    <p class="alert alert-info text-center">Need an awesome project done right? Got something awesome you just need someone to know? Drop me a line!</p>
-    <hr />
-    <form method="POST" action="http://formspree.io/Junverricht@gmail.com">
-        <div class="form-group">
-            <label for="exampleInputName">Name</label>
-            <input name="name" type="name" class="form-control" id="exampleInputName" placeholder="Enter name">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input name="_replyto" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleTextArea">Comments or cookie recipies?</label>
-            <textarea name="message" class="form-control" rows="3"></textarea>
-        </div>
-        <div class="col-md-8 col-md-offset-2 text-center">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-    </form>
-</form>
-</div>
-</section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>TuxedoBirds Productions</strong>
-                    </h4>
-                    <p>Far above Flatland</p>
-                    <ul class="list-unstyled">
-                        <!-- <li><i class="fa fa-phone fa-fw"></i>(271) 828-1828</li>
+    	<div class='about' id='aboutDiv'>
+    		<div class='media'> <img id='me' src='me.png' alt='Me!'> </div>
+    		<div class='blurb'> 
+    			<h3> Hi I’m Justin Unverricht, full stack and VR developer extraordinaire. I really enjoy programing in JavaScript and Python and can be convinced to develop in PHP when I have to! I have a wide variety of experience designing, developing and testing both mobile and web based applications. Past projects include:
+                    <ul>
+                        <li>Leading the usability and QA testing for an interactive television iOS app for WinView Inc. </li>
+                        <li>Developing the early front end for the San Francisco based baked goods startup Doughbies.</li>
+                        <li> Developing the CMS and front end for the mobile tourism app developed by Artirigo AG which clients include the German Ministry of Finance and the Chamber of Commerce in Bamberg, Germany.
                         </li>
-                    -->
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.linkedin.com/in/justinunverricht"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                        <li>Maintaining the immersive Hebrew language site and developing educational software for the UC Berkeley Middle Eastern deparment.
                         </li>
-                        <li>
-                            <a href="https://github.com/Br0kensword"><i class="fa fa-github-alt fa-fw fa-3x"></i></a>
-                        </li>
-                    
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; TuxedoBirds Productions 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                    </ul>     
+                I also enjoy working in the Unity3D engine, creating virtual environments and developing game AI and prototypes. My Unity projects include:
+                <ul>
+                    <li>PCG maze and level generation</li>
+                    <li>AI pathfinding and player interaction </li>
+                    <li>Procedural noise creation</li>
+                    <li>Virtual Reality managed walking </li>
+                </ul>
+                I am also an award winning craft beer homebrewer and was president of the largest home brew club in the bay area, the Bay Area Mashers. It is an awesome group of people and a great place to not only learn how to make and critique great beer but network with some awesome people in the industry as well.
+                </h3>
+    		</div>
+    	</div>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    	<div class='projects' id='projectDiv'> 
+    		<div class='media'>
+    			<img id='project-img' src='player.png' alt='React Player'>
+    			<video id='project-video' height="284" width='379' controls>
+    				<source id='project-source' src='Unity-PCG-Maze.mp4' type='video/mp4'>
+    				Your browser does not support the video tag.	
+    			</video>
+    		</div>
+    		<div class='blurb'> 
+    			<div class='project-list'>
+    				<p onclick='projectToggle("PCG")'>PCG Maze</p>
+    				<p onclick='projectToggle("Creature")'>Yoshi Cubes</p>
+    				<p onclick='projectToggle("Beer")'>Next Beer</p>
+    				<p onclick='projectToggle("NLP")'>NLP</p>
+    				<p onclick='projectToggle("Player")'>React Player</p>
+    			</div>
 
-    <!-- PrettyPhoto JavaScript -->
-    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    			<h3 id="project-blurb">An extension for the popular React-Player by Pete Cook, that allows for users to create track lists and gather urls for videos and music from across the web in one convenient place. This is currently a work in progress and future additions include the ability to save and load track lists and providing your own local movie and sound files to be played as well. You can check it out below <a href="www.tuxedobirds.com/react-player-track-demo" title="react player">Click Here</a></h3>
+    		</div>
+    	</div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div> <!-- end of page -->
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    //prettyPhoto stuff
-       $(document).ready(function(){
-                 $("a[rel^='prettyPhoto']").prettyPhoto({
-    allow_resize: true /* Resize the photos bigger than viewport. true/false */
-  });
-               });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
+    <script src='script.js'></script>
 </body>
-
 </html>

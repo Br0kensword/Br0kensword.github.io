@@ -1,0 +1,211 @@
+html,body{
+    margin:0;
+    height:100%;
+    width:100%;
+    max-width: 100%;
+    font-size: 100%;
+}
+
+body{
+    background: url(https://media.giphy.com/media/n6eheCE20uTGE/giphy.gif) no-repeat center center scroll;
+    background-size: cover;
+    font-family: 'Poiret One', cursive;
+}
+
+a{
+    color:black;
+}
+
+.page{
+    height:100%;
+    width:100%;
+}
+
+.penguin {
+    height:85%;
+    width:100%;
+    color:white;
+}
+
+.penguin > h1{
+    width:50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.info{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    color:black;
+}
+
+.info > div{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 19%;
+    margin:0 auto;
+}
+
+.projects{
+    display:none;
+    width: 100%;
+    background-color: white;
+    margin-top: 1em;
+}
+
+.about{
+    display:none;
+    width: 100%;
+    background-color: white;
+    margin-top: 1em;
+
+}
+
+
+.media{
+    display: inline-block;
+    float:left;
+    max-width:24%;
+}
+
+.media > img{
+    display: inline-block;
+    width:100%;
+}
+
+.media > video{
+    display: none;
+    width:100%;
+    background-color: black;
+}
+
+
+.blurb{
+    display: inline-block;
+    float:right;
+    max-width:74%;
+    font-weight: bold;
+    margin-left: 0.25em;
+    margin-right: 0.5em;
+}
+
+.project-list{
+    display: inline-block;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.project-list > p{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: left;
+    width: 15%;
+    margin:0 auto;
+    margin-top: 1em;
+}
+
+.project-list > p:hover {
+    color: red;
+}
+
+#project-blurb{
+    font-size: 1.5em;
+}
+
+#project-blurb > a:hover{
+    color: red;
+}
+
+
+
+/* css for custom tooltips */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+
+.tooltip .tooltiptext {
+    visibility: visible;
+    width: 120px;
+    background-color: black;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* media query madness */
+
+@media only screen and (max-width: 760px) {
+
+   .penguin > h1 { 
+      font-size: 2em; 
+   }
+}
+
+@media only screen and (max-width: 620px) {
+
+   .blurb { 
+      max-width: 70%; 
+   }
+
+   .project-list > p{
+        display:block;
+   }
+
+   .info > div{
+        display: inline-block;
+        width: 17%;
+   }
+
+   .tooltip .tooltiptext{
+        opacity: 0;
+   }
+
+   .tooltip:hover .tooltiptext {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .media > img{
+        width: 100%;
+    }
+}
