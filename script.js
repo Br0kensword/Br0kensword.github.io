@@ -66,7 +66,7 @@ function projectToggle(target){
 			projectImg.setAttribute("src", "player.png");
 			link.appendChild(linkText);
 			link.title = "react player";
-			link.href = "http://www.tuxedobirds.com/react-player-track-demo";
+			link.href = "react-player-track-demo";
 			projectBlurb.appendChild(link);
 			break;
 
